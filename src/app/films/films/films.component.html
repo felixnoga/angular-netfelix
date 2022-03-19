@@ -1,0 +1,11 @@
+<div class="principal col-md-10 p-3">
+  <div *ngIf="!films" class="alert alert-danger">Inicia tu búsqueda...</div>
+
+  <div class="row g-3">
+    <app-filmitem
+      *ngFor="let film of films"
+      [film]="film"
+      class="col-md-3"
+    ></app-filmitem>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-dark border-bottom border-danger"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand text-danger fw-bold" href="#">NETFELIX</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item text-white fw-light fs-7">
+          Your favourite movie search engine
+        </li>
+      </ul>
+      <form class="d-flex" (ngSubmit)="search()">
+        <input
+          name="queryTerm"
+          class="form-control me-2"
+          type="search"
+          placeholder="Search Movie..."
+          aria-label="Search"
+          [(ngModel)]="queryTerm"
+        />
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>

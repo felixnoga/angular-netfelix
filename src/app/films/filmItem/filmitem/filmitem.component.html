@@ -1,0 +1,13 @@
+<div>
+  <img src="{{ film.Poster }}" class="card-img-top" alt="{{ film.Title }}" />
+  <div class="card-body">
+    <h5 class="card-title">{{ film.Title }}</h5>
+    <p class="card-text">Año: {{ film.Year }}</p>
+    <a
+      href="https://www.imdb.com/title/{{ film.imdbID }}"
+      target="_blank"
+      class="btn btn-danger btn-sm"
+      >Ver en IMDB</a
+    >
+  </div>
+</div>

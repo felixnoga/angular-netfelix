@@ -1,0 +1,11 @@
+<div class="sidebar col-md-2 p-3">
+  <h6 class="text-white fw-light">Search history</h6>
+  <ul class="list-group">
+    <li
+      *ngFor="let film of history"
+      class="list-group-item list-group-item-dark"
+    >
+      {{ film }}
+    </li>
+  </ul>
+</div>
