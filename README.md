@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-Very light app to self practice Angular 11 (modules, components, services, http requests).
+App to self practice Angular 11 (modules, components, services, http requests). Used to query odbmapi API and search films.
 
 ## Author
 
